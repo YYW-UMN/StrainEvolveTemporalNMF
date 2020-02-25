@@ -9,11 +9,31 @@ Explore how strains of paraTB evolved over 6 years from samples of 4 different U
 NMF is a dimension reduction technique: a large matrix X can be represented with two smaller matrices U and V. 
 
 <p float="left">
-<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/TemporalNMF.png" width="500" />
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/NMF.png" width="500" />
 </p>
 
 Here on the left, X is the SNP data observed, where columns are individuals and rows are SNPs. Values of 0, 0.5, and 1 represent ref allele, heterogeneous alternate allele, and homogeneous alternate allele, respectively. 
 
 On the right side, U represents a panel of strains which were the ancestors of all individuals in the sampled population. Each column shows a distintive SNP pattern for each ancestor strain. 
 
-V is the composition coeffiencts of ancestor strains for each sample. Specifically, for each sample (column), V gives the proportions of ancestor A, B, C etc. 
+V shows the composition coeffiencts of each ancestor strain for each sample, such as proportions of ancestor A, B, C etc among sample m. 
+
+### What is temporal NMF?
+To explore how strains evolve over time, NMF is performed at each time point. Minor changes are allowed for U, the ancestor panel, based on the assumption that the majority of SNPs in ancestor strains will not change over time. 
+
+<p float="left">
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/TemporalNMF.png" width="500" />
+</p>
+
+### How to visualize changes among ancestor strains and samples?
+Results from the temporal NMF are then converted to XY coordinates using tsne so that they can be visualized on a 2D space.
+
+<p float="left">
+<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/Figures/StrainsEvolve.png" width="500" />
+</p>
+
+- Cross respresents ancestor strains
+- Dot respresents individual samples
+- Color of the dot represents States
+
+
