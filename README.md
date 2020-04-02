@@ -27,16 +27,26 @@ To explore how strains evolve over time, NMF is performed at each time point. Mi
 
 ### How to visualize changes among ancestor strains and samples?
 Results from the temporal NMF are then converted to XY coordinates using tsne so that they can be visualized on a 2D space.
-1. Evolving Strains
+1. Evolving Strains (compressed view)
 <p float="left">
-<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/templateStrainsCompressed.png" width="500" />
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/templateStrainsCompressed.png" width="500" />
 </p>
 
-2. Strains within samples
-<p float="left">
-<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/Mixtures_compressed.png" width="500" />
+2. Strains within samples (compressed view)
+<p float="left"> 
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/Mixtures_compressed.png" width="500" />
 </p>
 
+
+Original views
+<p float="left">
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/templateStrains.png" width="700" />
+</p>
+
+
+<p float="left">
+<img src="https://github.com/YYW-UMN/StrainEvolve_TemporalNMF/blob/master/Mixtures.png" width="700" />
+</p>
 
 
 
