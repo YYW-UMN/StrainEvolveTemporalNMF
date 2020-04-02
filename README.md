@@ -29,12 +29,12 @@ To explore how strains evolve over time, NMF is performed at each time point. Mi
 Results from the temporal NMF are then converted to XY coordinates using tsne so that they can be visualized on a 2D space.
 1. Evolving Strains
 <p float="left">
-<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/Figures/templateStrainsCompressed.png" width="500" />
+<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/templateStrainsCompressed.png" width="500" />
 </p>
 
 2. Strains within samples
 <p float="left">
-<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/Figures/tMixtures_compressed.png" width="500" />
+<img src="https://github.com/YYW-UMN/Workflow_WGStoStrains/blob/master/Mixtures_compressed.png" width="500" />
 </p>
 
 
